@@ -1,0 +1,32 @@
+{
+  "name": "js-learning",
+  "version": "0.0.1",
+  "private": false,
+  "description": "js-learning",
+  "author": "hemyWen",
+  "license": "MIT",
+  "files": [
+    "lib/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": " webpack-dev-server  --mode=development --config webpack.config.js --open",
+    "build": "webpack --mode=production --config webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.25.9",
+    "babel-loader": "^8.2.3",
+    "html-webpack-plugin": "^4.5.2",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "react": "^17.0.1",
+    "shifty": "^2.19.0"
+  }
+}
